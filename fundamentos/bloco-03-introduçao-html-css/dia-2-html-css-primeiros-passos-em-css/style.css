@@ -1,0 +1,39 @@
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+.list-color {
+    background-color: pink;
+}
+
+ul {
+    background-color: aqua;
+    font-style: italic;
+    line-height: 30px;
+    text-align: left;
+    text-decoration: dotted;
+}
+
+p {
+  font-weight: 600;
+  font-size: 3em;
+  text-align: center;
+}
+
+body {
+  font-size: 16px;
+}
+
+#amarelinho {
+  background-color: yellow;
+}
+
+#vermelhinho {
+  background-color: red;
+}
+
+#marromzinho {
+  background-color: brown;
+}
