@@ -1,3 +1,7 @@
 .lista {
     background-color: yellow;
 }
+
+li:nth-child(even) {
+    color: green;
+}
