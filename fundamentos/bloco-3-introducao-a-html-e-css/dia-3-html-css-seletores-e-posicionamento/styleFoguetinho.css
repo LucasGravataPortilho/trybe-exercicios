@@ -21,3 +21,8 @@ div:nth-child(6) {
 div:nth-child(7) {
     background-color: lightblue;
 }
+
+div:nth-child(odd) {
+    font-style: italic;
+    text-align: center;
+}
