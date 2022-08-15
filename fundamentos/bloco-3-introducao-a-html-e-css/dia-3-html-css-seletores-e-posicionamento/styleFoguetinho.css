@@ -1,0 +1,37 @@
+div:hover {
+    border: 10px solid black;
+}
+
+div:nth-child(3) {
+    background-color: blue;
+}
+
+div:nth-child(4) {
+    background-color: red;
+}
+
+div:nth-child(5) {
+    background-color: orange;
+    padding: 2em;
+}
+
+div:nth-child(6) {
+    background-color: darkblue;
+}
+
+div:nth-child(7) {
+    background-color: lightblue;
+}
+
+div:nth-child(odd) {
+    font-style: italic;
+    text-align: center;
+}
+
+div:last-of-type > h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div:nth-child(5) > h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
