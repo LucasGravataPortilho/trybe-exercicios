@@ -1,0 +1,15 @@
+h1, p{
+    text-align: center;
+}
+
+li:hover {
+    background-color: red
+}
+
+a:active {
+    color: white;
+}
+
+.list {
+    list-style: none;
+}
