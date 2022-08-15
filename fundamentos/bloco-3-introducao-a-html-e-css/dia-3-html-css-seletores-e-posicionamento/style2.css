@@ -14,10 +14,16 @@
     top: 90px;
     left: 300px;
     width: 200px;
+    z-index: 1;
   }
   
   .speech {
     font-size: 25px;
+    position: absolute;
+    top: 90px;
+    left: 335px;
+    width: 200px;
+    z-index: 2;
   }
   
   .bowser {
