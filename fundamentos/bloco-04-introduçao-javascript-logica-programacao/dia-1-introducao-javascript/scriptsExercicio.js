@@ -58,3 +58,35 @@ if (g + h > i && h + i > g && g + i > h && soma === 180) {
 } else {
     console.log(false);
 }
+
+//exercicio 6
+let peça = "rainha";
+
+switch (peça.) {
+    case "peao":
+        console.log("frente e diagonal");
+        break;
+    
+    case "torre":
+        console.log("laterais");
+        break;
+
+    case "bispo":
+        console.log("diagonais");
+        break;
+
+    case "cavalo":
+        console.log("em formato de L");
+        break;
+
+    case "rainha":
+        console.log("em todas as direções");
+        break;
+
+    case "rei":
+        console.log("em todas as direções, porém um espaço apenas");
+        break;
+
+    default:
+        console.log("não é uma peça de xadrez!");
+}
