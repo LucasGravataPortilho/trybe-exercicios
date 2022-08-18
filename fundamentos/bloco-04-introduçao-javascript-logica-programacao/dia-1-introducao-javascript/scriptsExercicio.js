@@ -33,3 +33,14 @@ if (c > d && c > e) {
 } else {
     console.log("e é o maior valor!");
 }
+
+//exercicio 4
+const f = 3;
+
+if (f > 0) {
+    console.log("positivo");
+} else if (f < 0) {
+    console.log("negativo");
+} else {
+    console.log("zero");
+}
