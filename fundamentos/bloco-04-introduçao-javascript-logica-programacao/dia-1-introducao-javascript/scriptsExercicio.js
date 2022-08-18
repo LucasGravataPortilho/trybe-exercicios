@@ -15,3 +15,8 @@ console.log(divisao);
 console.log(modulo);
 
 //exercicio 2
+if (a > b) {
+    console.log("o valor de a é maior!");
+} else {
+    console.log("o valor de b é maior!");
+}
