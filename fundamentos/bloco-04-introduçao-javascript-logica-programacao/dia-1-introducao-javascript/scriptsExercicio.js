@@ -20,3 +20,16 @@ if (a > b) {
 } else {
     console.log("o valor de b é maior!");
 }
+
+//exercicio 3
+const c = 5;
+const d = 12;
+const e = 20;
+
+if (c > d && c > e) {
+    console.log("c é o maior valor!");
+} else if (d > c && d > e) {
+    console.log("d é o maior valor!");
+} else {
+    console.log("e é o maior valor!");
+}
