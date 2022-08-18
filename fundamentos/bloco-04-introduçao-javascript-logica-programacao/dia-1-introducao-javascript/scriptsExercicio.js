@@ -44,3 +44,17 @@ if (f > 0) {
 } else {
     console.log("zero");
 }
+
+//exercicio 5
+const g = 85;
+const h = 50;
+const i = 45;
+const soma = g + h + i;
+
+if (g + h > i && h + i > g && g + i > h && soma === 180) {
+    console.log(true);
+} else if (soma !== 180) {
+    console.log("erro!");
+} else {
+    console.log(false);
+}
