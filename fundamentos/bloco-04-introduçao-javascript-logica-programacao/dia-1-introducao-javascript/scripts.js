@@ -78,3 +78,4 @@ else {
 }
 //finalizando exercicios de condicionais
 
+//iniciando operadores lógicos
