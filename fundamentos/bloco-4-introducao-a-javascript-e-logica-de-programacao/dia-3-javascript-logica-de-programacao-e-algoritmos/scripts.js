@@ -23,3 +23,30 @@ function reverseUnico (str) {
 }
 reverseUnico("pato");
 // implementando outra forma de inverter string
+
+let array = ["java", "javacript", "python", "html", "css"];
+let maior = array[0];
+let menor = array[0];
+
+for (let j = 0; j < array.length; j += 1) {
+    let atual = array[j];
+    if (atual.length > maior.length) {
+        maior = atual;
+    }
+    
+    console.log("a maior palavra agora é: " + maior);
+}
+
+console.log(maior);
+
+for (let k = 0; k < array.length; k += 1) {
+    let atualMenor = array[k];
+    if (atualMenor.length < menor.length) {
+        menor = atualMenor;
+    }
+    
+    console.log("a maior palavra agora é: " + menor);
+}
+
+console.log(menor);
+//finzalizado o exercicio 3 de maior e menor palavra.
