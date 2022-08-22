@@ -17,3 +17,9 @@ function reverseString (str) {
 
 reverseString("tryber");
 // invertendo string
+
+function reverseUnico (str) {
+    console.log(str.split("").reverse().join(""));
+}
+reverseUnico("pato");
+// implementando outra forma de inverter string
