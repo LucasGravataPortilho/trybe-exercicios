@@ -50,3 +50,28 @@ for (let k = 0; k < array.length; k += 1) {
 
 console.log(menor);
 //finzalizado o exercicio 3 de maior e menor palavra.
+
+let maiorPrimo = 0;
+let numerosPrimos = [];
+for (let x = 2; x <= 50; x +=1) {
+    let divisores = 0;
+    for (let y = 2; y < x; y+=1) {
+        if(x % y === 0) {
+            divisores+=1;
+        }
+    }
+
+    if(divisores % x === 0) {
+        numerosPrimos.push(x);
+    }
+}
+
+for (let z = 2; z <= numerosPrimos.length; z +=1) {
+    if (numerosPrimos[z] > maiorPrimo) {
+        maiorPrimo = numerosPrimos[z];
+    }
+}
+
+console.log(numerosPrimos);
+console.log(maiorPrimo);
+//finalizando exercicios do bloco.
