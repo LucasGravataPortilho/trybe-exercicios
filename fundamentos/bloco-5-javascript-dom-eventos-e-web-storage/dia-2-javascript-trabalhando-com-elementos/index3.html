@@ -71,10 +71,10 @@
       newSection.className = 'center-content';
       container2.appendChild(newSection);
 
-      let container3 = document.getElementsByClassName('center-content');
+      let container3 = document.getElementsByClassName('center-content')[0];
       let newP = document.createElement('p');
       newP.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-      container3[0].appendChild(newP);
+      container3.appendChild(newP);
 
       let newSection2 = document.createElement('section');
       newSection2.className = 'left-content';
@@ -83,6 +83,12 @@
       let newSection3 = document.createElement('section');
       newSection3.className = 'right-content';
       container2.appendChild(newSection3);
+      
+      let container4 = document.getElementsByClassName('left-content')[0];
+      let newImg = document.createElement('img');
+      newImg.src = 'https://picsum.photos/200';
+      newImg.className = 'small-image';
+      container4.appendChild(newImg);
     
 
 
