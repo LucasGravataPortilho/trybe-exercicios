@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let container = document.body;
+      let newH1 = document.createElement('h1');
+      newH1.innerText = "Exercício 5.2 - Javascript DOM";
+      container.appendChild(newH1);
+
+      let newMain = document.createElement('main');
+      newMain.className = 'main-content';
+      container.appendChild(newMain);
+
+      let container2 = document.getElementsByClassName('main-content')[0];
+      let newSection = document.createElement('section');
+      newSection.className = 'center-content';
+      container2.appendChild(newSection);
+
+      let container3 = document.getElementsByClassName('center-content')[0];
+      let newP = document.createElement('p');
+      newP.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+      container3.appendChild(newP);
+
+      let newSection2 = document.createElement('section');
+      newSection2.className = 'left-content';
+      container2.appendChild(newSection2);
+
+      let newSection3 = document.createElement('section');
+      newSection3.className = 'right-content';
+      container2.appendChild(newSection3);
+      
+      let container4 = document.getElementsByClassName('left-content')[0];
+      let newImg = document.createElement('img');
+      newImg.src = 'https://picsum.photos/200';
+      newImg.className = 'small-image';
+      container4.appendChild(newImg);
+
+      let container5 = document.getElementsByClassName('right-content')[0];
+      let newList = document.createElement('ul');
+
+      let um = document.createElement('li');
+      let dois = document.createElement('li');
+      let tres = document.createElement('li');
+      let quatro = document.createElement('li');
+      let cinco = document.createElement('li');
+      let seis = document.createElement('li');
+      let sete = document.createElement('li');
+      let oito = document.createElement('li');
+      let nove = document.createElement('li');
+      let dez = document.createElement('li');
+
+      um.innerText = 'um';
+      dois.innerText = 'dois';
+      tres.innerText = 'três';
+      quatro.innerText = 'quatro';
+      cinco.innerText = 'cinco';
+      seis.innerText = 'seis';
+      sete.innerText = 'sete';
+      oito.innerText = 'oito';
+      nove.innerText = 'nove';
+      dez.innerText = 'dez';
+
+      newList.appendChild(um);
+      newList.appendChild(dois);
+      newList.appendChild(tres);
+      newList.appendChild(quatro);
+      newList.appendChild(cinco);
+      newList.appendChild(seis);
+      newList.appendChild(sete);
+      newList.appendChild(oito);
+      newList.appendChild(nove);
+      newList.appendChild(dez);
+
+      container5.appendChild(newList);
+
+      let newH31 = document.createElement('h3');
+      let newH32 = document.createElement('h3');
+      let newH33 = document.createElement('h3');
+      container2.appendChild(newH31);
+      container2.appendChild(newH32);
+      container2.appendChild(newH33);
+    
+
+
+    </script>
+  </body>
+</html>
