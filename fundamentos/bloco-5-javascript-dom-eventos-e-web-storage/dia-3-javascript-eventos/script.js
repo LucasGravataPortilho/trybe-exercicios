@@ -125,18 +125,24 @@ zoomOut();
 
 function tarefaCalendario(string) {
   let listaTarefas = document.querySelector('.my-tasks');
-  // let tarefa = document.createElement('span');
-  let tarefa = document.createElement('li');
+  let tarefa = document.createElement('span');
+  // let tarefa = document.createElement('li');
   tarefa.innerHTML = string;
   listaTarefas.appendChild(tarefa);
 }
 
 tarefaCalendario("arrumar o quarto");
-tarefaCalendario('cozinhar o almoço');
 
 // -----------------------------------------
 
+function colorTask(cor) {
+  let listaTarefas = document.querySelector('.my-tasks');
+  let legenda = document.createElement('div')
+  legenda.className = 'task';
+  legenda.style.backgroundColor = cor;
+  listaTarefas.appendChild(legenda);
+}
 
-
+colorTask('blue');
 
 
