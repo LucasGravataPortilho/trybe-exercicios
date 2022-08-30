@@ -123,6 +123,19 @@ zoomOut();
 
 // ------------------------------------------
 
+function tarefaCalendario(string) {
+  let listaTarefas = document.querySelector('.my-tasks');
+  // let tarefa = document.createElement('span');
+  let tarefa = document.createElement('li');
+  tarefa.innerHTML = string;
+  listaTarefas.appendChild(tarefa);
+}
+
+tarefaCalendario("arrumar o quarto");
+tarefaCalendario('cozinhar o almoço');
+
+// -----------------------------------------
+
 
 
 
