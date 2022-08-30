@@ -52,7 +52,6 @@ window.onload = function () {
 
   const botaoFeriados = document.getElementById('btn-holiday');
   const cores = document.querySelectorAll('.holiday');
-  cores.disabled = true;
 
 
   botaoFeriados.addEventListener('click', function() {
@@ -82,6 +81,25 @@ function criarSexta() {
 criarSexta();
 
 // ----------------------------------------------------
+
+const botaoFriday = document.getElementById('btn-friday');
+const textoSexta = document.querySelectorAll('.friday');
+const sextas = [4, 11, 18, 25];
+
+botaoFriday.addEventListener('click', function() {
+  for(let i = 0; i < textoSexta.length; i += 1) {
+    let elemento = textoSexta[i];
+    if (elemento.innerText === 'Sextou!') {
+      elemento.innerHTML = sextas[i];
+    } else {
+      elemento.innerText = 'Sextou!';
+    }
+  }
+})
+
+// ----------------------------------------------
+
+
 
 
 
