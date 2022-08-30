@@ -99,6 +99,30 @@ botaoFriday.addEventListener('click', function() {
 
 // ----------------------------------------------
 
+function zoomIn() {
+  const allDays = document.querySelector('#days');
+
+  allDays.addEventListener('mouseover', function(event) {
+    event.target.style.fontSize = '40px';
+
+  })
+
+}
+
+function zoomOut() {
+  const allDays = document.querySelector('#days');
+
+  allDays.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+
+  })
+}
+
+zoomIn();
+zoomOut();
+
+// ------------------------------------------
+
 
 
 
