@@ -52,22 +52,36 @@ window.onload = function () {
 
   const botaoFeriados = document.getElementById('btn-holiday');
   const cores = document.querySelectorAll('.holiday');
-  console.log(cores);
+  cores.disabled = true;
 
 
   botaoFeriados.addEventListener('click', function() {
     for(let i = 0; i < cores.length; i += 1) {
       let elemento = cores[i];
-      elemento.style.backgroundColor = 'red';
+      if (elemento.style.backgroundColor === 'red') {
+        elemento.style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        elemento.style.backgroundColor = 'red';
+      }
     }
   
   }) 
 
 }
 
-// ------------------------------------------------------
+// ----------------------------------------------------
 
+function criarSexta() {
+  let botaoPai = document.getElementsByClassName('buttons-container')[0];
+  let botaoSexta = document.createElement('button');
+  botaoSexta.innerText = 'Sexta-Feira';
+  botaoSexta.id = 'btn-friday';
+  botaoPai.appendChild(botaoSexta);
+}
 
+criarSexta();
+
+// ----------------------------------------------------
 
 
 
