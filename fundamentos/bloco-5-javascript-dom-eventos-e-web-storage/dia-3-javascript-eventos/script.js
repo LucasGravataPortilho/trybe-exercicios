@@ -47,3 +47,27 @@ function criarFeriado() {
 criarFeriado();
 
 // ---------------------------------------------------
+
+window.onload = function () {
+
+  const botaoFeriados = document.getElementById('btn-holiday');
+  const cores = document.querySelectorAll('.holiday');
+  console.log(cores);
+
+
+  botaoFeriados.addEventListener('click', function() {
+    for(let i = 0; i < cores.length; i += 1) {
+      let elemento = cores[i];
+      elemento.style.backgroundColor = 'red';
+    }
+  
+  }) 
+
+}
+
+// ------------------------------------------------------
+
+
+
+
+
