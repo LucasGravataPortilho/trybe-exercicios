@@ -145,4 +145,24 @@ function colorTask(cor) {
 
 colorTask('blue');
 
+// -------------------------------------------
+
+function selectTask() {
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let minhasTarefas = document.querySelector('.task');
+
+  minhasTarefas.addEventListener('click', function(event) {
+    if(tarefaSelecionada.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+
+  })
+}
+
+selectTask();
+
+// ----------------------------------------------
+
 
