@@ -33,3 +33,17 @@ function createDaysOfTheWeek() {
 
     decemberDays.appendChild(listaDias);
   };
+
+// ---------------------------------------------------
+
+function criarFeriado() {
+    let botaoPai = document.getElementsByClassName('buttons-container')[0];
+    let botao = document.createElement('button');
+    botao.innerText = 'Feriados';
+    botao.id = 'btn-holiday';
+    botaoPai.appendChild(botao);
+}
+
+criarFeriado();
+
+// ---------------------------------------------------
