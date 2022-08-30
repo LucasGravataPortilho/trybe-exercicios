@@ -99,31 +99,90 @@ botaoFriday.addEventListener('click', function() {
 
 // ----------------------------------------------
 
-function zoomIn() {
-  const allDays = document.querySelector('#days');
+// function zoomIn() {
+//   const allDays = document.querySelector('#days');
 
-  allDays.addEventListener('mouseover', function(event) {
-    event.target.style.fontSize = '40px';
+//   allDays.addEventListener('mouseover', function(event) {
+//     event.target.style.fontSize = '40px';
 
-  })
+//   })
 
-}
+// }
 
-function zoomOut() {
-  const allDays = document.querySelector('#days');
+// function zoomOut() {
+//   const allDays = document.querySelector('#days');
 
-  allDays.addEventListener('mouseout', function(event) {
-    event.target.style.fontSize = '20px';
+//   allDays.addEventListener('mouseout', function(event) {
+//     event.target.style.fontSize = '20px';
 
-  })
-}
+//   })
+// }
 
-zoomIn();
-zoomOut();
+// zoomIn();
+// zoomOut();
 
 // ------------------------------------------
 
+function tarefaCalendario(string) {
+  let listaTarefas = document.querySelector('.my-tasks');
+  let tarefa = document.createElement('span');
+  // let tarefa = document.createElement('li');
+  tarefa.innerHTML = string;
+  listaTarefas.appendChild(tarefa);
+}
 
+tarefaCalendario("arrumar o quarto");
 
+// -----------------------------------------
 
+function colorTask(cor) {
+  let listaTarefas = document.querySelector('.my-tasks');
+  let legenda = document.createElement('div')
+  legenda.className = 'task';
+  legenda.style.backgroundColor = cor;
+  listaTarefas.appendChild(legenda);
+}
+
+colorTask('blue');
+
+// -------------------------------------------
+
+function selectTask() {
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let minhasTarefas = document.querySelector('.task');
+
+  minhasTarefas.addEventListener('click', function(event) {
+    if(tarefaSelecionada.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+
+  })
+}
+
+selectTask();
+
+// ----------------------------------------------
+
+function corNoCalendario() {
+  const allDays = document.querySelector('#days');
+  let tarefaSelecionada = document.getElementsByClassName('task selected');
+  let tarefa = document.querySelector('.task');
+  let corDaTarefa = tarefa.style.backgroundColor;
+
+  allDays.addEventListener('click', function(event) {
+    let eventTargetColor = event.target.style.color;
+    if(tarefaSelecionada.length > 0 && corDaTarefa !== eventTargetColor) {
+      let color = tarefaSelecionada[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if(corDaTarefa === eventTargetColor) {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+
+  })
+
+}
+
+corNoCalendario();
 
