@@ -68,9 +68,12 @@ const coolestTvShow = {
 
   const showHabs = (student) => {
     const arraySkills = Object.keys(student);
+    const arrayValues = Object.values(student);
     for (const skill in arraySkills) {
-        console.log(`${arraySkills[skill]}, Nível: ${student[arraySkills[skill]]}`);
+        console.log(`${arraySkills[skill]}, Nível: ${arrayValues[skill]}`);
     }
   } 
 
   showHabs(student1);
+
+//   ----------------------------------------------------------------
