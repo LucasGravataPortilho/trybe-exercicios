@@ -20,7 +20,7 @@ const getCountry = (onSuccess, callback) => {
     } else {
       const errorMessage = 'País não encontrado';
       // insira uma `callback` como retorno da função em caso de erro
-      return callback(errorMessage);
+      return callback(errorMessage); 
     }
   }, delay());
 };
